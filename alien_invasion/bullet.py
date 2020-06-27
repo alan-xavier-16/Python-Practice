@@ -24,7 +24,7 @@ class Bullet(Sprite):
         # Update the decimal position of the bullet
         self.y -= self.settings.bullet_speed
         # Update the rect postion
-        self.rect = self.y
+        self.rect.y = self.y
 
     def draw_bullet(self):
         """Draw bullet on the screen"""
